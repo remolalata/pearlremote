@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #494551;
+  --page-surface: #fdf7ff;
 }
 
 @theme {
@@ -12,6 +13,16 @@
   --color-primary-darker: #33235c;
   --color-primary-surface: #f5f0ff;
   --color-primary-surface-hover: #eee6ff;
+  --color-section-surface: #f8f2fa;
+  --color-card-surface: #ffffff;
+  --color-service-card-border: #cbc4d2;
+  --color-service-card-featured: #ece6ee;
+  --color-divider: #cbc4d2;
+  --color-step-icon-surface: #6750a4;
+  --color-step-icon-foreground: #e0d2ff;
+  --color-step-number: #f2ecf4;
+  --color-badge-foreground: #645a7d;
+  --color-badge-surface: #e1d4fd;
   --color-button-black: #000000;
   --color-button-black-hover: #2b2930;
   --color-button-white: #ffffff;
@@ -22,11 +33,23 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-page-surface: var(--page-surface);
   --font-sans: var(--font-inter);
   --font-display: var(--font-manrope);
 }
 
 body {
   color: var(--foreground);
+  background-color: var(--page-surface);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.divider {
+  @apply bg-divider h-px w-full;
 }

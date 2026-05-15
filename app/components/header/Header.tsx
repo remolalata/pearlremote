@@ -6,25 +6,32 @@ import { HeaderNav } from './HeaderNav';
 
 export function Header() {
   return (
-    <header className='relative border-b border-[#FDF7FF] bg-white shadow-xs'>
-      <div className='mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4'>
-        <HeaderLogo
-          href={headerContent.logo.href}
-          label={headerContent.logo.label}
-        />
+    <header className='border-page-surface relative border-b shadow-xs'>
+      <div className='container mx-auto grid grid-cols-[1fr_auto] items-center gap-6 px-6 py-4 lg:grid-cols-[1fr_auto_1fr]'>
+        <div className='justify-self-start'>
+          <HeaderLogo
+            href={headerContent.logo.href}
+            label={headerContent.logo.label}
+          />
+        </div>
 
-        <div className='hidden items-center gap-6 md:flex'>
+        <div className='hidden justify-self-center md:block'>
           <HeaderNav items={headerContent.navigation} />
+        </div>
+
+        <div className='hidden justify-self-end md:block'>
           <HeaderActions
             bookCall={headerContent.actions.bookCall}
             hireStaff={headerContent.actions.hireStaff}
           />
         </div>
 
-        <HeaderMobileMenu
-          actions={headerContent.actions}
-          items={headerContent.navigation}
-        />
+        <div className='justify-self-end md:hidden'>
+          <HeaderMobileMenu
+            actions={headerContent.actions}
+            items={headerContent.navigation}
+          />
+        </div>
       </div>
     </header>
   );

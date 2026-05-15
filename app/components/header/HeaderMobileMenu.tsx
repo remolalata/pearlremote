@@ -1,11 +1,11 @@
 'use client';
 
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { ButtonLink } from '../ui/Button';
 import { TextLink } from '../ui/TextLink';
+import { IoClose, IoMenu } from 'react-icons/io5';
 
 type HeaderMobileNavItem = {
   href: string;
@@ -82,9 +82,9 @@ export function HeaderMobileMenu({ actions, items }: HeaderMobileMenuProps) {
             transition={{ duration: 0.16, ease: 'easeOut' }}
           >
             {isOpen ? (
-              <X aria-hidden='true' className='text-heading h-5 w-5' />
+              <IoClose aria-hidden='true' className='text-heading h-5 w-5' />
             ) : (
-              <Menu aria-hidden='true' className='text-heading h-5 w-5' />
+              <IoMenu aria-hidden='true' className='text-heading h-5 w-5' />
             )}
           </motion.span>
         </AnimatePresence>
@@ -97,7 +97,7 @@ export function HeaderMobileMenu({ actions, items }: HeaderMobileMenuProps) {
             key='mobile-menu'
             {...panelMotion}
             transition={{ duration: 0.2, ease: 'easeOut' }}
-            className='absolute top-full right-0 left-0 z-50 border-b border-[#FDF7FF] bg-white px-6 py-6 shadow-lg'
+            className='border-page-surface absolute top-full right-0 left-0 z-50 border-b bg-white px-6 py-6 shadow-lg'
           >
             <nav aria-label='Mobile navigation' className='grid gap-5'>
               {items.map((item) => (

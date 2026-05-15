@@ -1,20 +1,19 @@
 import Link from 'next/link';
 import type { ButtonHTMLAttributes } from 'react';
 import type { ComponentProps } from 'react';
+import type { ReactNode } from 'react';
 
 type ButtonVariant = 'black' | 'primary' | 'white' | 'transparent';
 
-type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'children'> & {
-  label: string;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  label?: string;
   variant?: ButtonVariant;
 };
 
-type ButtonLinkProps = Omit<
-  ComponentProps<typeof Link>,
-  'children' | 'className'
-> & {
+type ButtonLinkProps = Omit<ComponentProps<typeof Link>, 'className'> & {
+  children?: ReactNode;
   className?: string;
-  label: string;
+  label?: string;
   variant?: ButtonVariant;
 };
 
@@ -34,6 +33,7 @@ function getButtonClassName(variant: ButtonVariant, className: string) {
 }
 
 export function Button({
+  children,
   className = '',
   label,
   variant = 'black',
@@ -46,12 +46,13 @@ export function Button({
       type={type}
       className={getButtonClassName(variant, className)}
     >
-      {label}
+      {children ?? label}
     </button>
   );
 }
 
 export function ButtonLink({
+  children,
   className = '',
   label,
   variant = 'black',
@@ -59,7 +60,7 @@ export function ButtonLink({
 }: ButtonLinkProps) {
   return (
     <Link {...linkProps} className={getButtonClassName(variant, className)}>
-      {label}
+      {children ?? label}
     </Link>
   );
 }

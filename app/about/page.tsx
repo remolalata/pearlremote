@@ -1,3 +1,3 @@
 export default function AboutPage() {
-  return <main className="flex flex-1" />;
+  return <main className='flex flex-1' />;
 }

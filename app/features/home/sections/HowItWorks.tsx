@@ -1,6 +1,7 @@
 import { FaUsers } from 'react-icons/fa';
 import { PiChatBold } from 'react-icons/pi';
 import { MdOutlineRocketLaunch } from 'react-icons/md';
+import { MotionSection } from '../../../components/layout/MotionSection';
 import type { HowItWorksProps } from '../../../types/home/sections.types';
 
 const processStepIcons = {
@@ -11,7 +12,7 @@ const processStepIcons = {
 
 export function HowItWorks({ content }: HowItWorksProps) {
   return (
-    <section
+    <MotionSection
       aria-labelledby='how-it-works-title'
       className='bg-section-surface'
     >
@@ -63,6 +64,6 @@ export function HowItWorks({ content }: HowItWorksProps) {
           </ol>
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 }

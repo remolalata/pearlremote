@@ -9,6 +9,8 @@ export type HomeCoreServiceIconName =
   | 'social'
   | 'support';
 
+export type HomeWhyChooseUsIconName = 'check' | 'savings' | 'shield' | 'speed';
+
 export type HomePageContent = {
   seo: {
     description: string;
@@ -17,6 +19,7 @@ export type HomePageContent = {
   hero: HomeHeroContent;
   howItWorks: HomeHowItWorksContent;
   coreServices: HomeCoreServicesContent;
+  whyChooseUs: HomeWhyChooseUsContent;
 };
 
 export type HomeHeroContent = {
@@ -69,6 +72,19 @@ export type HomeCoreServicesContent = {
     description: string;
     featured?: boolean;
     icon: HomeCoreServiceIconName;
+    title: string;
+  }[];
+};
+
+export type HomeWhyChooseUsContent = {
+  heading: string;
+  image: {
+    alt: string;
+    src: string;
+  };
+  reasons: {
+    description: string;
+    icon: HomeWhyChooseUsIconName;
     title: string;
   }[];
 };

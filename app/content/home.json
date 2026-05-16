@@ -97,5 +97,34 @@
         "description": "Content scheduling, community management, and engagement."
       }
     ]
+  },
+  "whyChooseUs": {
+    "heading": "Why Global Leaders Choose RemoteStaffCo",
+    "image": {
+      "src": "/images/banner/why-choose-us.png",
+      "alt": "Pearl Remote recruitment specialist reviewing remote staff candidates"
+    },
+    "reasons": [
+      {
+        "icon": "check",
+        "title": "Pre-vetted Top 3% Talent",
+        "description": "We only present candidates who pass our rigorous skills and communication assessments."
+      },
+      {
+        "icon": "speed",
+        "title": "Onboarding in Under a Week",
+        "description": "Our rapid matching process means your new hire starts contributing in days, not months."
+      },
+      {
+        "icon": "savings",
+        "title": "70% Cost Savings",
+        "description": "Access high-quality offshore talent at a fraction of local hiring costs."
+      },
+      {
+        "icon": "shield",
+        "title": "Risk-Free Trial",
+        "description": "If the talent isn't a perfect fit in the first 2 weeks, we replace them at no extra cost."
+      }
+    ]
   }
 }

@@ -7,6 +7,7 @@ import {
   MdOutlineSupportAgent,
 } from 'react-icons/md';
 import { CoreServiceCard } from '../../../components/home/CoreServiceCard';
+import { MotionSection } from '../../../components/layout/MotionSection';
 import type { CoreServicesProps } from '../../../types/home/sections.types';
 
 const coreServiceIcons = {
@@ -19,9 +20,9 @@ const coreServiceIcons = {
 
 export function CoreServices({ content }: CoreServicesProps) {
   return (
-    <section
+    <MotionSection
       aria-labelledby='core-services-title'
-      className='container mx-auto px-10 py-10 lg:py-20'
+      className='container mx-auto px-6 py-10 lg:py-20'
     >
       <div className='flex items-end justify-between'>
         <div>
@@ -66,6 +67,6 @@ export function CoreServices({ content }: CoreServicesProps) {
           <IoArrowForward aria-hidden='true' focusable='false' />
         </Link>
       </div>
-    </section>
+    </MotionSection>
   );
 }

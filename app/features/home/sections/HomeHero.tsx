@@ -4,6 +4,7 @@ import { GrLocation } from 'react-icons/gr';
 import { HiCheckBadge } from 'react-icons/hi2';
 import { PiLightningBold } from 'react-icons/pi';
 import { TbUserSearch } from 'react-icons/tb';
+import { MotionSection } from '../../../components/layout/MotionSection';
 import { Badge } from '../../../components/ui/Badge';
 import { Button } from '../../../components/ui/Button';
 import type { HomeHeroProps } from '../../../types/home/sections.types';
@@ -16,7 +17,7 @@ const benefitIcons = {
 
 export function HomeHero({ content }: HomeHeroProps) {
   return (
-    <section
+    <MotionSection
       aria-labelledby='home-hero-title'
       className='container mx-auto flex flex-col items-center justify-between gap-12 px-6 py-10 lg:flex-row lg:py-20'
     >
@@ -101,6 +102,6 @@ export function HomeHero({ content }: HomeHeroProps) {
           </div>
         </figcaption>
       </figure>
-    </section>
+    </MotionSection>
   );
 }

@@ -2,6 +2,7 @@ import type {
   HomeCoreServicesContent,
   HomeHeroContent,
   HomeHowItWorksContent,
+  HomeWhyChooseUsContent,
 } from './content.types';
 
 export type HomeHeroProps = {
@@ -14,4 +15,8 @@ export type HowItWorksProps = {
 
 export type CoreServicesProps = {
   content: HomeCoreServicesContent;
+};
+
+export type WhyChooseUsProps = {
+  content: HomeWhyChooseUsContent;
 };

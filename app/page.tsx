@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import homePageContent from './content/home.json';
 import { CoreServices } from './features/home/sections/CoreServices';
+import { Faqs } from './features/home/sections/Faqs';
 import { HomeHero } from './features/home/sections/HomeHero';
 import { HowItWorks } from './features/home/sections/HowItWorks';
 import { PopularRoles } from './features/home/sections/PopularRoles';
@@ -15,6 +16,7 @@ export const metadata: Metadata = homeContent.seo;
 export default function HomePage() {
   const {
     coreServices,
+    faqs,
     hero,
     howItWorks,
     popularRoles,
@@ -30,6 +32,7 @@ export default function HomePage() {
       <WhyChooseUs content={whyChooseUs} />
       <PopularRoles content={popularRoles} />
       <Testimonials content={testimonials} />
+      <Faqs content={faqs} />
     </main>
   );
 }

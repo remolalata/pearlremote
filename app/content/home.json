@@ -208,5 +208,26 @@
         }
       }
     ]
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How quickly can we hire remote staff?",
+        "answer": "Most clients receive matched candidates within 3 to 7 days, depending on the role requirements and interview availability."
+      },
+      {
+        "question": "Are candidates already vetted?",
+        "answer": "Yes. We screen for communication skills, role-specific experience, reliability, and remote-work readiness before introducing candidates."
+      },
+      {
+        "question": "What roles can Pearl Remote help fill?",
+        "answer": "We support virtual assistants, customer support, admin and back-office, e-commerce, social media, and other operational remote roles."
+      },
+      {
+        "question": "What happens if a hire is not the right fit?",
+        "answer": "If the match is not right during the initial trial period, we help source a replacement so your team can keep moving."
+      }
+    ]
   }
 }

@@ -1,5 +1,6 @@
 import type {
   HomeCoreServicesContent,
+  HomeFaqsContent,
   HomeHeroContent,
   HomeHowItWorksContent,
   HomePopularRolesContent,
@@ -29,4 +30,8 @@ export type PopularRolesProps = {
 
 export type TestimonialsProps = {
   content: HomeTestimonialsContent;
+};
+
+export type FaqsProps = {
+  content: HomeFaqsContent;
 };

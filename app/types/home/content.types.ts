@@ -19,6 +19,7 @@ export type HomePageContent = {
   hero: HomeHeroContent;
   howItWorks: HomeHowItWorksContent;
   coreServices: HomeCoreServicesContent;
+  faqs: HomeFaqsContent;
   popularRoles: HomePopularRolesContent;
   testimonials: HomeTestimonialsContent;
   whyChooseUs: HomeWhyChooseUsContent;
@@ -120,5 +121,13 @@ export type HomeTestimonialsContent = {
     };
     quote: string;
     rating: number;
+  }[];
+};
+
+export type HomeFaqsContent = {
+  heading: string;
+  items: {
+    answer: string;
+    question: string;
   }[];
 };

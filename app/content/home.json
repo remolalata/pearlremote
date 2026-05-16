@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Hire Pre-Vetted Filipino Remote Staff | Pearl Remote",
+    "description": "Pearl Remote helps businesses hire reliable pre-vetted Filipino virtual assistants, customer support agents, and back-office staff in 3 to 7 days."
+  },
+  "hero": {
+    "badge": "VETTED PROFESSIONALS ONLY",
+    "heading": {
+      "prefix": "Hire Pre-Vetted Filipino Remote Staff in",
+      "highlight": "3-7 Days"
+    },
+    "description": "We help businesses find reliable virtual assistants, customer support agents, and back-office staff from the Philippines.",
+    "image": {
+      "src": "/images/banner/banner.png",
+      "alt": "Pearl Remote Filipino remote staff recruitment and onboarding support"
+    },
+    "mediaCard": {
+      "eyebrow": "ACTIVE RECRUITMENT",
+      "title": "Matching with top 1% talent"
+    },
+    "actions": {
+      "primary": {
+        "label": "Hire Remote Staff"
+      },
+      "secondary": {
+        "label": "Book a Call"
+      }
+    },
+    "benefits": [
+      {
+        "icon": "check",
+        "label": "Pre-vetted talent"
+      },
+      {
+        "icon": "lightning",
+        "label": "Fast onboarding"
+      },
+      {
+        "icon": "location",
+        "label": "Philippines-based"
+      }
+    ]
+  },
+  "howItWorks": {
+    "heading": "How It Works",
+    "description": "Our streamlined process ensures you get the right talent without the traditional hiring headaches.",
+    "steps": [
+      {
+        "icon": "chat",
+        "title": "Tell Us Your Needs",
+        "description": "We jump on a call to understand your specific requirements, workflow, and culture."
+      },
+      {
+        "icon": "staff",
+        "title": "We Match Your Staff",
+        "description": "We filter through our pre-vetted database to find the perfect 3-5 candidates for you."
+      },
+      {
+        "icon": "launch",
+        "title": "Start in 3-7 Days",
+        "description": "Interview, select, and onboard your new team member within a single week."
+      }
+    ]
+  },
+  "coreServices": {
+    "heading": "Our Core Services",
+    "description": "Dedicated expertise across critical business functions, delivered remotely with precision.",
+    "action": {
+      "href": "#",
+      "label": "View all services"
+    },
+    "items": [
+      {
+        "icon": "support",
+        "title": "Customer Support",
+        "description": "24/7 coverage for ticketing, live chat, and email support with excellent English proficiency.",
+        "featured": true
+      },
+      {
+        "icon": "computer",
+        "title": "Virtual Assistants",
+        "description": "Calendar management, travel booking, and executive-level administrative tasks."
+      },
+      {
+        "icon": "admin",
+        "title": "Admin & Back-Office",
+        "description": "Data entry, invoicing, and complex document processing."
+      },
+      {
+        "icon": "commerce",
+        "title": "E-commerce",
+        "description": "Shopify management, order fulfillment, and product listing."
+      },
+      {
+        "icon": "social",
+        "title": "Social Media",
+        "description": "Content scheduling, community management, and engagement."
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "heading": "Why Global Leaders Choose RemoteStaffCo",
+    "image": {
+      "src": "/images/banner/why-choose-us.png",
+      "alt": "Pearl Remote recruitment specialist reviewing remote staff candidates"
+    },
+    "reasons": [
+      {
+        "icon": "check",
+        "title": "Pre-vetted Top 3% Talent",
+        "description": "We only present candidates who pass our rigorous skills and communication assessments."
+      },
+      {
+        "icon": "speed",
+        "title": "Onboarding in Under a Week",
+        "description": "Our rapid matching process means your new hire starts contributing in days, not months."
+      },
+      {
+        "icon": "savings",
+        "title": "70% Cost Savings",
+        "description": "Access high-quality offshore talent at a fraction of local hiring costs."
+      },
+      {
+        "icon": "shield",
+        "title": "Risk-Free Trial",
+        "description": "If the talent isn't a perfect fit in the first 2 weeks, we replace them at no extra cost."
+      }
+    ]
+  }
+}

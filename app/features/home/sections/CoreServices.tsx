@@ -42,8 +42,8 @@ export function CoreServices({ content }: CoreServicesProps) {
           <IoArrowForward aria-hidden='true' focusable='false' />
         </Link>
       </div>
-      <div className='mt-12 lg:mt-20'>
-        <ol className='grid grid-cols-1 gap-6 lg:grid-cols-6'>
+      <div className='-mx-6 mt-12 scrollbar-none overflow-x-auto px-6 lg:mx-0 lg:mt-20 lg:overflow-visible lg:px-0'>
+        <ol className='flex snap-x snap-mandatory items-stretch gap-6 after:block after:min-w-0.5 lg:grid lg:grid-cols-6 lg:after:hidden'>
           {content.items.map((service, index) => {
             const Icon = coreServiceIcons[service.icon];
 
@@ -59,14 +59,14 @@ export function CoreServices({ content }: CoreServicesProps) {
             );
           })}
         </ol>
-        <Link
-          href={content.action.href}
-          className='text-primary mx-auto mt-6 flex w-fit items-center justify-center gap-1 text-center font-bold lg:hidden'
-        >
-          {content.action.label}{' '}
-          <IoArrowForward aria-hidden='true' focusable='false' />
-        </Link>
       </div>
+      <Link
+        href={content.action.href}
+        className='text-primary mx-auto mt-6 flex w-fit items-center justify-center gap-1 text-center font-bold lg:hidden'
+      >
+        {content.action.label}{' '}
+        <IoArrowForward aria-hidden='true' focusable='false' />
+      </Link>
     </MotionSection>
   );
 }

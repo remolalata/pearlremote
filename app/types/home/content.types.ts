@@ -19,7 +19,10 @@ export type HomePageContent = {
   hero: HomeHeroContent;
   howItWorks: HomeHowItWorksContent;
   coreServices: HomeCoreServicesContent;
+  faqs: HomeFaqsContent;
+  finalCta: HomeFinalCtaContent;
   popularRoles: HomePopularRolesContent;
+  testimonials: HomeTestimonialsContent;
   whyChooseUs: HomeWhyChooseUsContent;
 };
 
@@ -103,4 +106,37 @@ export type HomePopularRolesContent = {
     };
     title: string;
   }[];
+};
+
+export type HomeTestimonialsContent = {
+  description: string;
+  heading: string;
+  items: {
+    author: {
+      image: {
+        alt: string;
+        src: string;
+      };
+      name: string;
+      role: string;
+    };
+    quote: string;
+    rating: number;
+  }[];
+};
+
+export type HomeFaqsContent = {
+  heading: string;
+  items: {
+    answer: string;
+    question: string;
+  }[];
+};
+
+export type HomeFinalCtaContent = {
+  action: {
+    label: string;
+  };
+  description: string;
+  heading: string;
 };

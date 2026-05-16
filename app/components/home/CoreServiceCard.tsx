@@ -9,7 +9,7 @@ export function CoreServiceCard({
 }: CoreServiceCardProps) {
   return (
     <li
-      className={`${featured ? 'border-service-card-featured bg-service-card-featured' : 'border-service-card-border bg-card-surface'} rounded-4xl border p-12 ${wide ? 'lg:col-span-3' : 'lg:col-span-2'}`}
+      className={`${featured ? 'border-service-card-featured bg-service-card-featured' : 'border-service-card-border bg-card-surface'} flex min-w-[82%] snap-center flex-col self-stretch rounded-4xl border p-12 lg:min-w-0 ${wide ? 'lg:col-span-3' : 'lg:col-span-2'}`}
     >
       <Icon
         aria-hidden='true'

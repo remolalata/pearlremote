@@ -11,19 +11,19 @@ const highlightIcons: Record<HowItWorksHighlightIconName, ElementType> = {
 
 const tileToneClasses = {
   dark: {
-    body: 'bg-why-section-surface text-why-copy-muted',
-    heading: 'text-page-surface',
-    icon: 'text-page-surface',
+    body: 'bg-how-it-works-highlight-dark text-how-it-works-highlight-dark-copy',
+    heading: 'text-how-it-works-highlight-dark-heading',
+    icon: 'text-how-it-works-highlight-dark-heading',
   },
   muted: {
-    body: 'bg-service-card-featured text-foreground',
-    heading: 'text-heading',
+    body: 'bg-how-it-works-highlight-muted text-how-it-works-highlight-muted-copy',
+    heading: 'text-how-it-works-highlight-muted-heading',
     icon: 'text-primary',
   },
   primary: {
-    body: 'bg-step-icon-surface text-step-icon-foreground',
-    heading: 'text-step-icon-foreground',
-    icon: 'text-step-icon-foreground',
+    body: 'bg-how-it-works-highlight-primary text-how-it-works-highlight-primary-copy',
+    heading: 'text-how-it-works-highlight-primary-copy',
+    icon: 'text-how-it-works-highlight-primary-copy',
   },
 };
 

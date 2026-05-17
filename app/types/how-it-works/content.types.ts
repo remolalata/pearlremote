@@ -35,6 +35,20 @@ export type HowItWorksPageContent = {
       width: HowItWorksHighlightWidth;
     }[];
   };
+  cta: {
+    actions: {
+      primary: {
+        href: string;
+        label: string;
+      };
+      secondary: {
+        href: string;
+        label: string;
+      };
+    };
+    description: string;
+    heading: string;
+  };
   steps: {
     description: string;
     icon: HowItWorksStepIconName;

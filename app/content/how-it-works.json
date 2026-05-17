@@ -40,6 +40,20 @@
       }
     ]
   },
+  "cta": {
+    "heading": "Ready to find your next superstar?",
+    "description": "Book a free discovery call today and let's map out your remote team strategy together.",
+    "actions": {
+      "primary": {
+        "href": "/contact",
+        "label": "Book a Call"
+      },
+      "secondary": {
+        "href": "/services",
+        "label": "View Our Services"
+      }
+    }
+  },
   "steps": [
     {
       "label": "Step 01",

@@ -7,3 +7,7 @@ export type HowItWorksProcessProps = {
 export type HowItWorksHighlightsProps = {
   content: HowItWorksPageContent['highlights'];
 };
+
+export type HowItWorksCtaProps = {
+  content: HowItWorksPageContent['cta'];
+};
